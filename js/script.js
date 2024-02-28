@@ -104,8 +104,10 @@ function leerIntento() {
 function terminar(mensaje) {
     const input = document.getElementById("guess-input");
     input.disabled = true;
-    btn.disabled = true;
-    btn.style.backgroundColor = "grey";
+    btn.textContent = "Reintentar";
+    btn.addEventListener("click", function() {
+        location.reload();
+    });
     let contenedor = document.getElementById("guesses");
     contenedor.innerHTML = mensaje;
 }
