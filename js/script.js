@@ -91,11 +91,14 @@ function terminar(mensaje) {
     input.disabled = true;
     btn.textContent = "Reintentar";
     btn.addEventListener("click", function() {
+        // Limpiar el valor del input
+        GRID.style.display = "none";
         location.reload();
     });
     let contenedor = document.getElementById("guesses");
     contenedor.innerHTML = mensaje;
 }
+
 
 // función para seleccionar una palabra al azar
 function traerPalabraApi() {
