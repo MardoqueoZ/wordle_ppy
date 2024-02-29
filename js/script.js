@@ -1,6 +1,6 @@
 // variables globales
 let diccionario = ["APPLE", "ANGEL", "BURRO", "PERRO", "FENIX"];
-let intentos = 7;
+let intentos = 6;
 let palabra;
 
 const btn = document.getElementById("guess-button");
